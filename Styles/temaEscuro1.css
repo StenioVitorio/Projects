@@ -82,7 +82,7 @@ img {
     max-height: 250px;
 }
 
-@media (max-width : 640px){
+@media (min-width : 10px){
     #cabecario {
 
         position: fixed;
