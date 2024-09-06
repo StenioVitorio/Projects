@@ -209,7 +209,7 @@ img {
     }
 } 
 
-@media (min-width : 901px) {
+@media (min-width: 1000px) {
     #cabecario {
 
         position: fixed;
