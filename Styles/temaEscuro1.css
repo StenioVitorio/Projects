@@ -34,13 +34,9 @@
 
 
 
-
-
 body {
     background-color: rgb(51, 51, 51);
 }
-
-
 
 .corpo {
 
@@ -58,8 +54,6 @@ body {
 
 }
 
-
-
 .p1:nth-child(2) {
     animation-delay: 0.4s;
 }
@@ -67,11 +61,6 @@ body {
 .p1:nth-child(3) {
     animation-delay: 0.8s;
 }
-
-
-
-
-
 
 img {
     filter: drop-shadow(25px 25px 5px rgba(0, 0, 0, 1));
@@ -82,25 +71,33 @@ img {
     max-height: 250px;
 }
 
-@media (min-width : 10px){
+.headerContainer{
+    z-index: 1001;
+    position:absolute;
+    height: 500px;
+    width: 100%;top: 0;
+}
+
+@media (max-width: 980px){
     #cabecario {
 
-        position: fixed;
+        position: sticky;
         right: 7px;
         left: 7px;
         top: 7px;
         bottom: 40px;
         width: 100%;
-        height: 10%;
+        height:7%;
+        max-height: 80%;
         background-color: lightgray;
         color: black;
         display: flex;
         flex-direction: row;
         z-index: 100;
         border-radius: 25px;
+        
     
-    
-        justify-content: flex-end;
+        justify-content:space-between;
         align-items: center;
         animation: slide-In-Left 0.7s ease-in;
     
@@ -110,33 +107,38 @@ img {
     }
     
     #textoCima {
-    
+        font-size: 125%;
+        padding-top: 15px;
+        height:90%;
+        
         text-align: center;
         width: 90%;
     
-        font-size: 200%;
     }
     
     #menuBotao {
-        width: 15%;
-        max-width: 25%;
-        height: 85%;
-        max-height: 100%;
-        right: 25px;
-        padding: 15px;
+        width: 7%;
+        max-width: 45%;
+        height: 90%;
+        max-height: 600px;
+        right: 15px;
+        padding-right: 7px;
         min-width: 5%;
         min-height: 5%;
+        
     
     
     }
     
-    #botaoBotao {
-    
+  
+    .botoes-De-Menu{
+        margin-bottom: 15px;
         font-size: 25px;
         width: 100%;
         height: 100%;
         min-width: 10%;
         min-height: 10%;
+        
         color: white;
         background-color: rgb(51, 51, 51);
         border-radius: 20px;
@@ -145,9 +147,15 @@ img {
     }
     
     #botaoBotao:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
         border-color: white;
         border-width: 1px;
+    }
+    #botaoBotao2{
+        visibility: collapse;
+    }
+    #botaoBotao3{
+        visibility: collapse;
     }
     
     .p1 {
@@ -209,16 +217,18 @@ img {
     }
 } 
 
-@media (min-width: 1000px) {
+@media (min-width: 981px ) {
+
     #cabecario {
 
-        position: fixed;
+        position: sticky;
         right: 7px;
         left: 7px;
         top: 7px;
         bottom: 40px;
         width: 100%;
-        height: 10%;
+        height:10%;
+        max-height: 80%;
         background-color: lightgray;
         color: black;
         display: flex;
@@ -227,7 +237,7 @@ img {
         border-radius: 25px;
         font-size: 90%;
     
-        justify-content: flex-end;
+        justify-content:space-between;
         align-items: center;
         animation: slide-In-Left 0.7s ease-in;
     
@@ -237,28 +247,30 @@ img {
     }
     
     #textoCima {
-    
+        padding-top: 15px;
+        height:90%;
         text-align: center;
         width: 90%;
     
     }
     
     #menuBotao {
-        width: 10%;
-        max-width: 25%;
-        height: 85%;
-        max-height: 50px;
-        right: 25px;
-        padding: 15px;
+        width: 5%;
+        max-width: 45%;
+        height: 90%;
+        max-height: 600px;
+        right: 15px;
+        padding-right: 7px;
         min-width: 5%;
         min-height: 5%;
+        
     
     
     }
     
-    #botaoBotao {
-    
-        font-size: larger;
+    .botoes-De-Menu {
+        margin-bottom: 15px;
+        font-size: 25px;
         width: 100%;
         height: 100%;
         min-width: 10%;
@@ -269,9 +281,14 @@ img {
         border-color: transparent;
     
     }
-    
+    #botaoBotao2{
+        visibility: collapse;
+    }
+    #botaoBotao3{
+        visibility: collapse;
+    }
     #botaoBotao:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
         border-color: white;
         border-width: 1px;
     }
@@ -327,3 +344,4 @@ img {
     }
 
 }
+
